@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarees</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four images per row */
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover Effects */
+        .item:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+
+        .item:hover img {
+            transform: scale(1.1); /* Slightly zoom the image */
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; padding: 20px; background-color: #005f73; color: white;">
+            Sarees Collection
+        </h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="item">
+                <img src="https://www.bunaai.com/cdn/shop/products/indianwearonline-8797.jpg?v=1741246100" alt="Saree 1">
+                <p class="price">Rs. 799</p>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSydoOBmD048aZgW9JmV1LPCQuHT4U9j2VXdQ&s" alt="Saree 2">
+                <p class="price">Rs. 999</p>
+            </div>
+            <div class="item">
+                <img src="https://odette.in/cdn/shop/files/SROD1023ND_1_1080x.jpg?v=1692854056" alt="Saree 3">
+                <p class="price">Rs. 599</p>
+            </div>
+            <div class="item">
+                <img src="https://sareewave.com/cdn/shop/products/VSMENKA105.webp?v=1667455754" alt="Saree 4">
+                <p class="price">Rs. 1199</p>
+            </div>
+            <div class="item">
+                <img src="https://sakshigirri.com/cdn/shop/products/Outfit263_1080x.jpg?v=1658828880" alt="Saree 5">
+                <p class="price">Rs. 699</p>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUd06upV-FnljBIQFV_5HIr_dDAbvn1QDVRA&s" alt="Saree 6">
+                <p class="price">Rs. 1299</p>
+            </div>
+            <div class="item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/AUGUST/27/nUfY9cQJ_41f807f7300c46619879a6f4caaf11f5.jpg" alt="Saree 7">
+                <p class="price">Rs. 899</p>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopify.com/s/files/1/0049/3649/9315/files/koskii-lavender-threadwork-tissue-designer-saree-saus0038904_lavender_1_9_large.jpg?v=1729873765" alt="Saree 8">
+                <p class="price">Rs. 1499</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
