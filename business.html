@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-pic {
+            position: absolute;
+            top: 8px; 
+            right: 30px;  
+            width: 120px;
+            height: 120px; 
+            border-radius: 50%; 
+            border: 2px solid #ccc; }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Blossom & Brew Floral Studio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="https://previews.123rf.com/images/sofiyka4/sofiyka41403/sofiyka4140300480/26440171-art-colorful-floral-silhouette-profile-of-beautiful-girl-with-curly-hair-on-sepia-background.jpg" alt="Profile Picture" class="profile-pic">
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Business</h2>
+            <p>Your one-stop site for all your florals.</p>
+            <a href="#contact" class="hero-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Products</h2>
+        <p>We provide a wide range of varieties that you'll fall in love with!</p>
+        <ul>
+            <li><a href="dresses.html">Dresses</a></li>
+            <li><a href="sarees.html">Sarees</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+    </section>
+
+    <section id="service-images">
+        <h2>Have a look!!</h2>
+        <div class="image-gallery">
+            <div class="image-item">
+                <a href="dresses.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUgBSv1A-wEmopE4n7hOeWsoiG3MhxZExkAnyWgXzNOSh_50jv9jYw--HGToYFzhGiJjI&usqp=CAU" alt="Dresses">
+                    <p>Dresses</p>
+                </a>
+            </div>
+            <div class="image-item">
+                <a href="sarees.html">
+                    <img src="https://www.frontierraas.com/pub/media/catalog/product/cache/74910300c4c00f257771c5afa25168a6/f/r/fr12130629_5_.jpg" alt="Sarees">
+                    <p>Sarees</p>
+                </a>
+            </div>
+            <div class="image-item">
+                <a href="accessories.html">
+                    <img src="https://img.joomcdn.net/44a9627ab3d5ca214f6f4942228734199c645f15_original.jpeg" alt="Bows and Scrunchies">
+                    <p>Bows & Scrunchies</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <ul>
+            <li>We are a dedicated team with over 10 years of experience in business.</li><br>
+            <li>Our mission is to provide high-quality products.</li><br>
+            <li>Shipping is available all over India.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 1234567890</p>
+        <p>Email: contact@ourbusiness.com</p>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form onsubmit="submitFeedback(event)">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email"><br><br>
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <label for="rating">Rating: </label>
+            <input type="radio" name="rating" value="Very Poor"> Very Poor
+            <input type="radio" name="rating" value="Poor"> Poor
+            <input type="radio" name="rating" value="Average"> Average
+            <input type="radio" name="rating" value="Good"> Good
+            <input type="radio" name="rating" value="Excellent"> Excellent<br><br>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        <p id="thank-you-message" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+            Thank you for your feedback!
+        </p>
+    </section>
+    <section id="end">
+        <div class="end-item">
+            <img src="https://i.pinimg.com/originals/fa/1e/c4/fa1ec4373ba426546c02bcfd23c0017f.gif" alt="Thanks">
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Blossom & Brew Floral Studio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitFeedback(event) {
+            event.preventDefault();
+            document.getElementById('thank-you-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
